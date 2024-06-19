@@ -18,7 +18,7 @@ public class ControlLogin {
 
     @PostMapping("/login")
     public String procesarLogin(@RequestParam String usuario, @RequestParam String contraseña, Model model) {
-        // Validar el usuario y la contraseña en el servicio
+        
         Usuario usuarioValidado = serviceUsuario.validarUsuario(usuario, contraseña);
 
         if (usuarioValidado != null) {
