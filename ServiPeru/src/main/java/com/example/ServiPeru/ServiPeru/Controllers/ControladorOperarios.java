@@ -16,7 +16,7 @@ import java.util.List;
 public class ControladorOperarios {
     @Autowired
     private IServiceOperariosImpl serviceOperarios;
-
+//Esto es para listar los empleados
     @GetMapping("/Empleados")
     public String Listar(Model model){
         List<Operarios> operario = new ArrayList<>();
